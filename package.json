@@ -4,5 +4,20 @@
     "name": "Christian Vuerings",
     "url": "http://denbuzze.com"
   },
-  "description": "An unoffical API for UC Berkeley applications"
+  "bugs": "https://github.com/christianv/calapi/issues",
+  "description": "An unoffical API for UC Berkeley applications",
+  "dependencies": {
+    "express": "3.4.7"
+  },
+  "keywords": [
+    "api",
+    "uc berkeley"
+  ],
+  "license": "MIT",
+  "name": "calapi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianv/calapi.git"
+  },
+  "version": "0.0.1"
 }
