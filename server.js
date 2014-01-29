@@ -1,8 +1,12 @@
 (function() {
   'use strict';
 
+  // Express
   var express = require('express');
   var app = express();
+
+  // Request - HTTP Client that has build-in cookie handling (only for chocolate-dip)
+  var request = require('request');
 
   // Configuration
   app.use(app.router);
@@ -20,5 +24,6 @@
 
   // Expose variables
   module.exports.app = app;
+  module.exports.request = request;
   require('./routes');
 })();
