@@ -5,7 +5,7 @@
   var parent = module.parent.exports;
 
   exports.routes = function(req, res) {
-    var url = req.protocol + "://" + req.get('host');
+    var url = req.protocol + '://' + req.get('host');
 
     var parseRoute = function(route) {
       var expose = {
@@ -13,8 +13,8 @@
         path: url + '' + route.path
       };
 
-      if (route.params) {
-        expose.params = route.paramns;
+      if (route.params && route.params.length) {
+        expose.params = route.params;
       }
 
       return expose;
@@ -35,7 +35,6 @@
 
     res.json({
       name: 'calapi',
-      //routes: parent.app.routes
       routes: routes()
     });
   };
