@@ -5,7 +5,6 @@
   var parent = module.parent.exports;
 
   exports.routes = function(req, res) {
-console.log(this);
     var url = req.protocol + "://" + req.get('host');
 
     var parseRoute = function(route) {
